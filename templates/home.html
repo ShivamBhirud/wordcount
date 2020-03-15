@@ -1,0 +1,17 @@
+<!-- <div class="topnav">
+  <a href="#about">About</a>
+</div> -->
+<nav style="width: 100vw; background-color: #333; display: flex;font-family: monospace;">
+  <ul>
+  <a href="{% url 'about' %}" style="color: blanchedalmond;"><h3>ABOUT</h3></a>
+  </ul>
+</nav>
+
+<h1>Word Counter App</h1>
+
+
+
+<form action="{% url 'countvar' %}">
+  <textarea cols="40", rows="10", name="Text"> </textarea> <br>
+  <input type="submit" value="Submit">
+</form>
